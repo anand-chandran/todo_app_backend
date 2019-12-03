@@ -1,4 +1,20 @@
+const tasks = [
+    {
+        "id" : 1,
+        "title" : "Test 1",
+        "label" : "Easy",
+        "status": "pending",
+        "subtasks" : [{"title": "sub1"}]
+    },
+    {
+        "id" : 2,
+        "title" : "Sub task for Test 1",
+        "label" : "Easy",
+        "status": "pending",
+        "subtasks" : [{"title": "sub2"}]
 
+    }
+];
 module.exports = {
     addTodo : (req , res) => {
         let body = req.body;
